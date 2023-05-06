@@ -1,0 +1,31 @@
+.cta {
+    position: relative;
+    padding: 100px 30px;
+    border-radius: 50px;
+    text-align: center;
+    overflow: hidden;
+
+    @media (min-width: 992px) {
+        border-radius: 100px;
+    }
+
+    img {
+        position: absolute;
+        inset: 0 0 0 0;
+        max-width: none;
+        display: block;
+        object-fit: cover;
+        object-position: 50%;
+    }
+}
+
+.ctaHold {
+    position: relative;
+    z-index: 1;
+}
+
+.text {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    color: var(--white);
+}
