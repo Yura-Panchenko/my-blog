@@ -1,7 +1,7 @@
-import s from './style.module.scss';
-const Button = ({children}) => {
+import style from './style.module.scss';
+const Button = ({children,url}) => {
     return(
-        <a className={s.btn} href="#">{children}</a>
+        <a className={style.btn} href={url || "#"}>{children}</a>
     )
 }
 export default Button;

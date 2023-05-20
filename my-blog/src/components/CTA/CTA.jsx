@@ -1,17 +1,17 @@
 import { Button } from "../Button";
-import image from '../../assets/image-01.jpg';
+import image from '../../assets/images/image-01.jpg';
 
-import s from "./style.module.scss";
+import style from "./style.module.scss";
 
 const CTA = () => {
 
     return (
-        <div className={s.ctaSection}>
+        <div className={style.ctaSection}>
             <div className="container">
-                <div className={s.cta}>
-                    <img src={image} alt="" />
-                    <div className={s.ctaHold}>
-                        <div className={s.text}>
+                <div className={style.cta}>
+                    <img src={image} alt="image" />
+                    <div className={style.ctaHold}>
+                        <div className={style.text}>
                             <h2>Don’t Miss The 50% Discount if You register Today</h2>
                         </div>
                         <Button>Register Today</Button>

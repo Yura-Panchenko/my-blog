@@ -1,12 +1,10 @@
 import { useState } from 'react';
+import Routes from './routes/Routes';
 import {Header} from './components/Header';
 import {Hero} from './components/Hero';
 import { PostList } from './components/PostList';
 import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
-
-import 'normalize.css';
-import './global.scss';
 
 function App() {
     const [posts, setPosts] = useState(
@@ -37,25 +35,25 @@ function App() {
         }
     ]);
 
-    //Hero
     const heroTitle = "Discover Your Life, Travel Where You Want";
     const heroContent = "Would you explore natur paradise in the world, let’s find the best destination in world with us.";
 
     return (
-        <div className='wrapper'>
+        <Routes/>
+    )
+}
+
+export default App
+{/* <div className='wrapper'>
             <Header/>
             <main>
                 <Hero 
                     title={heroTitle}
                     text={heroContent}
-                    image={'./src/assets/hero-image.jpg'}
+                    image={'./src/assets/images/hero-image.jpg'}
                 />
                 <PostList posts={posts}/>
                 <CTA/>
             </main>
             <Footer/>
-        </div>
-    )
-}
-
-export default App
+        </div> */}

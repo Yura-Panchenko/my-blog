@@ -1,7 +1,7 @@
 const Logo = () => {
     return (
         <div className="logo">
-            <img src="./src/assets/logo.svg" alt="logo" />
+            <img src="./src/assets/images/logo.svg" alt="logo" />
         </div>
     )
 };

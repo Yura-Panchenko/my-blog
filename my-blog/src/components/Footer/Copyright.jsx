@@ -1,9 +1,8 @@
 const Copyright = () => {
-    // const currentYear = new Data().getFullYear();
-    // console.log(currentYear);
+    const currentYear = new Date().getFullYear();
     return (
         <div className="copyright">
-            <p>© 2022 Treloo LLC - All right reserved.</p>
+            <p>&copy; {currentYear} Treloo LLC - All right reserved.</p>
         </div>
     )
 }

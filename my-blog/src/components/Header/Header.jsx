@@ -1,26 +1,35 @@
 import {NavList,NavItem} from '../Navigation';
 import { Button } from '../Button';
 import Logo from './Logo';
-import s from './style.module.scss';
+import style from './style.module.scss';
 
 const Header = () => {
-    const menu = [
-        'Review',
-        'Tips',
-        'Alerts',
-        'Blog'
+    const{header,headerHolder} = style;
+
+    const menu = [{
+            id: 1,
+            title: 'Review'
+        },{
+            id: 2,
+            title: 'Tips'
+        },{
+            id: 3,
+            title: 'Alerts'
+        },{
+            id: 4,
+            title: 'Blog'
+        }
     ]
 
-    const headerMenu = menu.map((item, key) => {
-        return <NavItem key={key}>{item}</NavItem>
+    const headerMenu = menu.map((item) => {
+        return <NavItem key={item.id}>{item.title}</NavItem>
     })
 
     return (
-        <header className={s.header}>
+        <header className={header}>
             <div className="container">
-                <div className={s.headerHolder}>
+                <div className={headerHolder}>
                     <Logo/>
-
                     <NavList>
                         {headerMenu}
                     </NavList>

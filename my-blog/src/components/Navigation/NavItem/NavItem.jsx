@@ -1,8 +1,8 @@
-import s from '../style.module.scss';
+import style from '../style.module.scss';
 
 const NavItem = ({children}) => {
     return(
-        <li className={s.item}>
+        <li className={style.item}>
             {children}
         </li>
     )

@@ -1,12 +1,12 @@
-import PostItem from "./PosItem";
+import PostItem from "../PostItem/PosItem";
 
-import s from './style.module.scss';
+import style from './style.module.scss';
 
 const PostList = ({posts}) => {
     return (
-        <div className={s.postsWrap}>
+        <div className={style.postsWrap}>
             <div className="container">
-                <ul className={s.posts}>
+                <ul className={style.posts}>
                     {posts.map((post)=>{
                         return (
                             <PostItem 

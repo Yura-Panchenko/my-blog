@@ -1,15 +1,15 @@
 import { Button } from "../Button";
 
-import s from './style.module.scss';
+import style from './style.module.scss';
 const Hero = ({title,text,image}) => {
     return(
-        <div className={s.hero}>
-            <img className={s.heroImg} src={image} alt="image" />
-            <div className={s.heroHold}>
+        <div className={style.hero}>
+            <img className={style.heroImg} src={image} alt="image" />
+            <div className={style.heroHold}>
                 <div className="container">
                     <h1>{title}</h1>
                     <p>{text}</p>
-                    <Button>Button hero</Button>
+                    <Button url="www://google.com">Button hero</Button>
                 </div>
             </div>
         </div>

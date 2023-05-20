@@ -1,7 +1,7 @@
 import { NavList,NavItem } from "../Navigation";
 import Copyright from "./Copyright";
 
-import s from './style.module.scss';
+import style from './style.module.scss';
 
 const Footer = () => {
     const menu = [
@@ -16,9 +16,9 @@ const Footer = () => {
     })
     
     return (
-        <footer className={s.footer}>
+        <footer className={style.footer}>
             <div className="container">
-                <div className={s.footerHolder}>
+                <div className={style.footerHolder}>
                     <Copyright/>
                     <NavList>
                         {headerMenu}
